@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 #Neste exemplo, a pasta de publicação é copiada para uma pasta chamada App no contêiner.
 COPY bin/Release/net7.0/publish/ App/
 
-#O comando WORKDIR altera o WORKDIR dentro do contêiner para o aplicativo.
+#O comando WORKDIR altera o WORKDIR dentro do contêiner para a pasta do aplicativo.
 WORKDIR /App
 
 #O comando ENTRYPOINT informa ao Docker para configurar o contêiner para ser executado como um executável. 
